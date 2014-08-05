@@ -16,13 +16,7 @@ android {
         versionCode Integer.parseInt(project.SAMPLE_VERSION_CODE)
     }
 
-    signingConfigs { release }
 
-    buildTypes {
-        release {
-            signingConfig signingConfigs.release
-        }
-    }
 
     sourceSets {
         main {

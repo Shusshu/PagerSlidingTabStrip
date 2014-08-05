@@ -1,4 +1,5 @@
 apply plugin: 'android-library'
+apply plugin: 'android-maven'
 
 dependencies {
     compile 'com.android.support:support-v4:19.1.0'
@@ -21,3 +22,36 @@ android {
         }
     }
 }
+
+project.archivesBaseName = 'PagerSlidingTabStrip'
+
+/*
+modifyPom {
+    project {
+        name 'PagerSlidingTabStrip'
+        description project.POM_DESCRIPTION
+        url project.POM_SCM_URL
+        inceptionYear '2013'
+
+        scm {
+            url project.POM_SCM_URL
+            connection project.POM_SCM_CONNECTION
+            developerConnection project.POM_SCM_DEV_CONNECTION
+        }
+
+        licenses {
+            license {
+                name project.POM_LICENCE_NAME
+                url project.POM_LICENCE_URL
+                distribution project.POM_LICENCE_DIST
+            }
+        }
+
+        developers {
+            developer {
+                id project.POM_DEVELOPER_ID
+                name project.POM_DEVELOPER_NAME
+            }
+        }
+    }
+}*/
